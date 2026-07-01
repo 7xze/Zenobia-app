@@ -12,8 +12,10 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.LayoutDirection
 import com.zenobia.app.compound.tokens.generated.CompoundIcons
 import com.zenobia.app.libraries.designsystem.preview.ZenobiaThemedPreview
 import com.zenobia.app.libraries.designsystem.preview.PreviewGroup
@@ -25,8 +27,11 @@ import com.zenobia.app.libraries.ui.strings.CommonStrings
 fun BackButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    // TODO Handle RTL languages
-    imageVector: ImageVector = CompoundIcons.ArrowLeft(),
+    imageVector: ImageVector = if (LocalLayoutDirection.current == LayoutDirection.Rtl) {
+        CompoundIcons.ArrowRight()
+    } else {
+        CompoundIcons.ArrowLeft()
+    },
     contentDescription: String = stringResource(CommonStrings.action_back),
     enabled: Boolean = true,
 ) {

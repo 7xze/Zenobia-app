@@ -26,10 +26,13 @@ import com.zenobia.app.features.enterprise.api.canConnectToAnyHomeserver
 import com.zenobia.app.features.login.impl.accesscontrol.DefaultAccountProviderAccessControl
 import com.zenobia.app.features.login.impl.accountprovider.AccountProviderDataSource
 import com.zenobia.app.features.login.impl.login.LoginHelper
+import com.zenobia.app.appconfig.DevLoginConfig
 import com.zenobia.app.features.rageshake.api.RageshakeFeatureAvailability
+import com.zenobia.app.libraries.architecture.AsyncData
 import com.zenobia.app.libraries.architecture.Presenter
 import com.zenobia.app.libraries.core.meta.BuildMeta
 import com.zenobia.app.libraries.core.meta.BuildType
+import com.zenobia.app.libraries.matrix.api.auth.MatrixAuthenticationService
 import com.zenobia.app.libraries.sessionstorage.api.SessionStore
 import com.zenobia.app.libraries.ui.utils.MultipleTapToUnlock
 import kotlinx.coroutines.launch
@@ -45,6 +48,7 @@ class OnBoardingPresenter(
     private val onBoardingLogoResIdProvider: OnBoardingLogoResIdProvider,
     private val sessionStore: SessionStore,
     private val accountProviderDataSource: AccountProviderDataSource,
+    private val authenticationService: MatrixAuthenticationService,
 ) : Presenter<OnBoardingState> {
     @AssistedFactory
     interface Factory {
@@ -120,6 +124,9 @@ class OnBoardingPresenter(
                         }
                     }
                 }
+                OnBoardingEvents.OnDevSignIn -> localCoroutineScope.launch {
+                    devLogin()
+                }
             }
         }
 
@@ -127,6 +134,7 @@ class OnBoardingPresenter(
             isAddingAccount = isAddingAccount,
             showBackButton = params.showBackButton,
             showDeveloperSettings = buildMeta.buildType != BuildType.RELEASE,
+            showDevLogin = buildMeta.buildType != BuildType.RELEASE,
             productionApplicationName = buildMeta.productionApplicationName,
             defaultAccountProvider = defaultAccountProvider,
             mustChooseAccountProvider = mustChooseAccountProvider,
@@ -138,5 +146,14 @@ class OnBoardingPresenter(
             onBoardingLogoResId = onBoardingLogoResId,
             eventSink = ::handleEvent,
         )
+    }
+
+    private suspend fun devLogin() {
+        authenticationService.setHomeserver(DevLoginConfig.HOMESERVER_URL)
+            .onSuccess { details ->
+                if (details.supportsPasswordLogin) {
+                    authenticationService.login(DevLoginConfig.USERNAME, DevLoginConfig.PASSWORD)
+                }
+            }
     }
 }

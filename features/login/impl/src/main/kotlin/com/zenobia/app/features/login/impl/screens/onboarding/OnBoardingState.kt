@@ -16,6 +16,7 @@ data class OnBoardingState(
     val isAddingAccount: Boolean,
     val showBackButton: Boolean,
     val showDeveloperSettings: Boolean,
+    val showDevLogin: Boolean,
     val productionApplicationName: String,
     val defaultAccountProvider: String?,
     val mustChooseAccountProvider: Boolean,

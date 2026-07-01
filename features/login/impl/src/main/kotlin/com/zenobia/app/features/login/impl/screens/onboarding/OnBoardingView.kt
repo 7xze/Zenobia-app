@@ -314,6 +314,13 @@ private fun OnBoardingButtons(
                     .fillMaxWidth()
             )
         }
+        if (state.showDevLogin) {
+            TextButton(
+                text = "Dev Login (joan@joan.com)",
+                onClick = { state.eventSink(OnBoardingEvents.OnDevSignIn) },
+                modifier = Modifier.fillMaxWidth(),
+            )
+        }
         if (state.isAddingAccount.not()) {
             if (state.canReportBug) {
                 // Add a report problem text button. Use a Text since we need a special theme here.

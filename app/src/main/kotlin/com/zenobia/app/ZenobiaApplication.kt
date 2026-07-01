@@ -9,6 +9,7 @@
 package com.zenobia.app
 
 import android.app.Application
+import android.os.Build
 import androidx.compose.material3.ComposeMaterial3Flags.isAnchoredDraggableComponentsStrictOffsetCheckEnabled
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.startup.AppInitializer
@@ -32,6 +33,7 @@ class ZenobiaApplication : Application(), DependencyInjectionGraphOwner, Configu
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate() {
         super.onCreate()
+        initializeLocale()
         AppInitializer.getInstance(this).apply {
             initializeComponent(CrashInitializer::class.java)
             initializeComponent(PlatformInitializer::class.java)
@@ -43,5 +45,14 @@ class ZenobiaApplication : Application(), DependencyInjectionGraphOwner, Configu
         // Disable the strict offset check for anchored draggable components, as it can cause issues with bottom sheets.
         // Remove once https://issuetracker.google.com/issues/477038695 is fixed.
         isAnchoredDraggableComponentsStrictOffsetCheckEnabled = false
+    }
+
+    private fun initializeLocale() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            val localeManager = getSystemService(LOCALE_SERVICE) as android.app.LocaleManager
+            if (localeManager.applicationLocales.isEmpty) {
+                localeManager.applicationLocales = localeManager.systemLocales
+            }
+        }
     }
 }
