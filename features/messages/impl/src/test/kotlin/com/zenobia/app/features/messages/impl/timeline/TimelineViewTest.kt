@@ -38,7 +38,7 @@ import com.zenobia.app.tests.testutils.EventsRecorder
 import com.zenobia.app.tests.testutils.clickOn
 import com.zenobia.app.tests.testutils.robolectric.RobolectricTest
 import com.zenobia.app.tests.testutils.setSafeContent
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import org.junit.Ignore

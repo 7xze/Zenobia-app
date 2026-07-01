@@ -13,7 +13,7 @@ import com.zenobia.app.libraries.architecture.AsyncAction
 import com.zenobia.app.libraries.textcomposer.mentions.ResolvedSuggestion
 import com.zenobia.app.libraries.textcomposer.model.MessageComposerMode
 import com.zenobia.app.libraries.textcomposer.model.TextEditorState
-import com.zenobia.app.wysiwyg.display.TextDisplay
+import io.element.android.wysiwyg.display.TextDisplay
 import kotlinx.collections.immutable.ImmutableList
 
 @Stable

@@ -10,7 +10,7 @@ package com.zenobia.app.features.messages.test.timeline
 
 import androidx.compose.runtime.Composable
 import com.zenobia.app.features.messages.api.timeline.HtmlConverterProvider
-import com.zenobia.app.wysiwyg.utils.HtmlConverter
+import io.element.android.wysiwyg.utils.HtmlConverter
 import org.jsoup.nodes.Document
 
 class FakeHtmlConverterProvider(

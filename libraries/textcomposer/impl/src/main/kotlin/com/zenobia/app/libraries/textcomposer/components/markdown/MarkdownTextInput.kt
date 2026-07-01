@@ -40,8 +40,8 @@ import com.zenobia.app.libraries.textcomposer.model.MarkdownTextEditorState
 import com.zenobia.app.libraries.textcomposer.model.Suggestion
 import com.zenobia.app.libraries.textcomposer.model.SuggestionType
 import com.zenobia.app.libraries.textcomposer.model.aMarkdownTextEditorState
-import com.zenobia.app.wysiwyg.compose.RichTextEditorStyle
-import com.zenobia.app.wysiwyg.compose.internal.applyStyleInCompose
+import io.element.android.wysiwyg.compose.RichTextEditorStyle
+import io.element.android.wysiwyg.compose.internal.applyStyleInCompose
 import timber.log.Timber
 
 @Suppress("ModifierMissing")

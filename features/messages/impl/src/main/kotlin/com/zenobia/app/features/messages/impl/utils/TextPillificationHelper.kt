@@ -25,8 +25,8 @@ import com.zenobia.app.libraries.matrix.api.permalink.PermalinkBuilder
 import com.zenobia.app.libraries.matrix.api.permalink.PermalinkParser
 import com.zenobia.app.libraries.textcomposer.mentions.MentionSpanProvider
 import com.zenobia.app.libraries.textcomposer.mentions.getMentionSpans
-import com.zenobia.app.wysiwyg.view.spans.CodeBlockSpan
-import com.zenobia.app.wysiwyg.view.spans.InlineCodeSpan
+import io.element.android.wysiwyg.view.spans.CodeBlockSpan
+import io.element.android.wysiwyg.view.spans.InlineCodeSpan
 
 interface TextPillificationHelper {
     fun pillify(text: CharSequence, pillifyPermalinks: Boolean = true): CharSequence

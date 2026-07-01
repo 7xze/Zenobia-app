@@ -84,8 +84,8 @@ import com.zenobia.app.libraries.textcomposer.model.TextEditorState
 import com.zenobia.app.libraries.textcomposer.model.rememberMarkdownTextEditorState
 import com.zenobia.app.services.analytics.api.AnalyticsService
 import com.zenobia.app.services.analyticsproviders.api.trackers.captureInteraction
-import com.zenobia.app.wysiwyg.compose.RichTextEditorState
-import com.zenobia.app.wysiwyg.display.TextDisplay
+import io.element.android.wysiwyg.compose.RichTextEditorState
+import io.element.android.wysiwyg.display.TextDisplay
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toImmutableList
 import kotlinx.coroutines.CancellationException

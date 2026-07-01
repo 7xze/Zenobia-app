@@ -98,8 +98,8 @@ import com.zenobia.app.libraries.textcomposer.model.aTextEditorStateMarkdown
 import com.zenobia.app.libraries.textcomposer.model.aTextEditorStateRich
 import com.zenobia.app.libraries.textcomposer.model.showCaptionCompatibilityWarning
 import com.zenobia.app.libraries.ui.strings.CommonStrings
-import com.zenobia.app.wysiwyg.compose.RichTextEditor
-import com.zenobia.app.wysiwyg.display.TextDisplay
+import io.element.android.wysiwyg.compose.RichTextEditor
+import io.element.android.wysiwyg.display.TextDisplay
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.coroutines.launch

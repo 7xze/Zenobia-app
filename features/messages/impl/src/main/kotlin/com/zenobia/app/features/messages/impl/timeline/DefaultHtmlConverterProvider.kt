@@ -21,10 +21,10 @@ import com.zenobia.app.libraries.core.bool.orFalse
 import com.zenobia.app.libraries.di.RoomScope
 import com.zenobia.app.libraries.textcomposer.ElementRichTextEditorStyle
 import com.zenobia.app.libraries.textcomposer.mentions.MentionSpanProvider
-import com.zenobia.app.wysiwyg.compose.StyledHtmlConverter
-import com.zenobia.app.wysiwyg.display.MentionDisplayHandler
-import com.zenobia.app.wysiwyg.display.TextDisplay
-import com.zenobia.app.wysiwyg.utils.HtmlConverter
+import io.element.android.wysiwyg.compose.StyledHtmlConverter
+import io.element.android.wysiwyg.display.MentionDisplayHandler
+import io.element.android.wysiwyg.display.TextDisplay
+import io.element.android.wysiwyg.utils.HtmlConverter
 import uniffi.wysiwyg_composer.newMentionDetector
 
 @ContributesBinding(RoomScope::class)

@@ -125,7 +125,7 @@ import com.zenobia.app.libraries.matrix.api.timeline.item.event.LocalEventSendSt
 import com.zenobia.app.libraries.matrix.api.user.MatrixUser
 import com.zenobia.app.libraries.textcomposer.model.TextEditorState
 import com.zenobia.app.libraries.ui.strings.CommonStrings
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import kotlinx.collections.immutable.persistentListOf
 import timber.log.Timber
 import kotlin.time.Duration.Companion.milliseconds

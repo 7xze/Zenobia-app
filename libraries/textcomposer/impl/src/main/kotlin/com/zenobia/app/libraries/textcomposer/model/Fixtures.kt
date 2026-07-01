@@ -8,7 +8,7 @@
 
 package com.zenobia.app.libraries.textcomposer.model
 
-import com.zenobia.app.wysiwyg.compose.RichTextEditorState
+import io.element.android.wysiwyg.compose.RichTextEditorState
 
 fun aTextEditorStateMarkdown(
     initialText: String? = "",

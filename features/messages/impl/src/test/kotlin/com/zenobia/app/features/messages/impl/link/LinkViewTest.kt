@@ -21,7 +21,7 @@ import com.zenobia.app.tests.testutils.EventsRecorder
 import com.zenobia.app.tests.testutils.clickOn
 import com.zenobia.app.tests.testutils.ensureCalledOnceWithParam
 import com.zenobia.app.tests.testutils.robolectric.RobolectricTest
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import org.junit.Test
 
 class LinkViewTest : RobolectricTest() {

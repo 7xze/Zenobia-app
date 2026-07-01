@@ -8,7 +8,7 @@
 
 package com.zenobia.app.libraries.voicerecorder.impl.audio
 
-import com.zenobia.app.opusencoder.configuration.SampleRate as LibOpusOggSampleRate
+import io.element.android.opusencoder.configuration.SampleRate as LibOpusOggSampleRate
 
 data object SampleRate {
     const val HZ = 48_000

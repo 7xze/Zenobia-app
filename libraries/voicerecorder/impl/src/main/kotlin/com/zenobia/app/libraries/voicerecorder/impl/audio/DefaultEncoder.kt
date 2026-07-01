@@ -10,7 +10,7 @@ package com.zenobia.app.libraries.voicerecorder.impl.audio
 
 import dev.zacsweers.metro.ContributesBinding
 import com.zenobia.app.libraries.di.RoomScope
-import com.zenobia.app.opusencoder.OggOpusEncoder
+import io.element.android.opusencoder.OggOpusEncoder
 import timber.log.Timber
 import java.io.File
 

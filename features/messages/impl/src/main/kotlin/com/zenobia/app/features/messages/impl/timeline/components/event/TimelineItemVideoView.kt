@@ -65,8 +65,8 @@ import com.zenobia.app.libraries.matrix.ui.media.MediaRequestData
 import com.zenobia.app.libraries.textcomposer.ElementRichTextEditorStyle
 import com.zenobia.app.libraries.ui.strings.CommonStrings
 import com.zenobia.app.libraries.ui.utils.a11y.isTalkbackActive
-import com.zenobia.app.wysiwyg.compose.EditorStyledText
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.compose.EditorStyledText
+import io.element.android.wysiwyg.link.Link
 
 @Composable
 fun TimelineItemVideoView(

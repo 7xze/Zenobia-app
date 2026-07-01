@@ -55,8 +55,8 @@ import com.zenobia.app.libraries.designsystem.preview.PreviewsDayNight
 import com.zenobia.app.libraries.textcomposer.ElementRichTextEditorStyle
 import com.zenobia.app.libraries.ui.strings.CommonStrings
 import com.zenobia.app.libraries.ui.utils.a11y.isTalkbackActive
-import com.zenobia.app.wysiwyg.compose.EditorStyledText
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.compose.EditorStyledText
+import io.element.android.wysiwyg.link.Link
 
 private const val TALL_IMAGE_RATIO_DIVISOR = 3
 @Composable

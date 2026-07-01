@@ -10,7 +10,7 @@ package com.zenobia.app.features.messages.impl.link
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import com.zenobia.app.libraries.architecture.AsyncAction
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 
 open class LinkStateProvider : PreviewParameterProvider<LinkState> {
     override val values: Sequence<LinkState>

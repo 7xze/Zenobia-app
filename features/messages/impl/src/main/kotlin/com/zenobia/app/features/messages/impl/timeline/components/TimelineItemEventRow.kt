@@ -122,7 +122,7 @@ import com.zenobia.app.libraries.testtags.testTag
 import com.zenobia.app.libraries.ui.strings.CommonPlurals
 import com.zenobia.app.libraries.ui.strings.CommonStrings
 import com.zenobia.app.libraries.ui.utils.a11y.isTalkbackActive
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import kotlinx.coroutines.launch
 import kotlin.math.abs
 import kotlin.math.roundToInt

@@ -11,8 +11,8 @@ package com.zenobia.app.features.messages.impl.messagecomposer
 import androidx.compose.runtime.Composable
 import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
-import com.zenobia.app.wysiwyg.compose.RichTextEditorState
-import com.zenobia.app.wysiwyg.compose.rememberRichTextEditorState
+import io.element.android.wysiwyg.compose.RichTextEditorState
+import io.element.android.wysiwyg.compose.rememberRichTextEditorState
 
 interface RichTextEditorStateFactory {
     @Composable

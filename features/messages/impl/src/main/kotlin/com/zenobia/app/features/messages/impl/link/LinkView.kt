@@ -22,7 +22,7 @@ import com.zenobia.app.libraries.designsystem.components.dialogs.ConfirmationDia
 import com.zenobia.app.libraries.designsystem.preview.ZenobiaPreview
 import com.zenobia.app.libraries.designsystem.preview.PreviewsDayNight
 import com.zenobia.app.libraries.ui.strings.CommonStrings
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 
 @Composable
 fun LinkView(

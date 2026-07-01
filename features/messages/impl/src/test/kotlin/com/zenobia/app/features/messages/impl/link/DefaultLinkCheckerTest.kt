@@ -9,7 +9,7 @@
 package com.zenobia.app.features.messages.impl.link
 
 import com.google.common.truth.Truth.assertThat
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import org.junit.Test
 
 class DefaultLinkCheckerTest {

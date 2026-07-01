@@ -14,7 +14,7 @@ import com.zenobia.app.libraries.textcomposer.mentions.ResolvedSuggestion
 import com.zenobia.app.libraries.textcomposer.model.MessageComposerMode
 import com.zenobia.app.libraries.textcomposer.model.TextEditorState
 import com.zenobia.app.libraries.textcomposer.model.aTextEditorStateRich
-import com.zenobia.app.wysiwyg.display.TextDisplay
+import io.element.android.wysiwyg.display.TextDisplay
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 

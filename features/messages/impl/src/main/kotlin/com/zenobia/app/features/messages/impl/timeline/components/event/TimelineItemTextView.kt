@@ -32,8 +32,8 @@ import com.zenobia.app.libraries.designsystem.preview.ZenobiaPreview
 import com.zenobia.app.libraries.designsystem.preview.PreviewsDayNight
 import com.zenobia.app.libraries.textcomposer.ElementRichTextEditorStyle
 import com.zenobia.app.libraries.textcomposer.mentions.LocalMentionSpanUpdater
-import com.zenobia.app.wysiwyg.compose.EditorStyledText
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.compose.EditorStyledText
+import io.element.android.wysiwyg.link.Link
 
 @Composable
 fun TimelineItemTextView(

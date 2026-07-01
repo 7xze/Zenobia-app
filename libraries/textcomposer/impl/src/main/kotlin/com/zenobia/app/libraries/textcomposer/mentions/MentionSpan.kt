@@ -19,7 +19,7 @@ import androidx.core.text.getSpans
 import com.zenobia.app.libraries.matrix.api.core.EventId
 import com.zenobia.app.libraries.matrix.api.core.RoomIdOrAlias
 import com.zenobia.app.libraries.matrix.api.core.UserId
-import com.zenobia.app.wysiwyg.view.spans.CustomMentionSpan
+import io.element.android.wysiwyg.view.spans.CustomMentionSpan
 import kotlin.math.roundToInt
 
 /**

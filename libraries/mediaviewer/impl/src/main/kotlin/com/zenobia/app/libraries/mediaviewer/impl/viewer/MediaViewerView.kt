@@ -100,7 +100,7 @@ import com.zenobia.app.libraries.mediaviewer.impl.local.rememberLocalMediaViewSt
 import com.zenobia.app.libraries.mediaviewer.impl.util.bgCanvasWithTransparency
 import com.zenobia.app.libraries.textcomposer.ElementRichTextEditorStyle
 import com.zenobia.app.libraries.ui.strings.CommonStrings
-import com.zenobia.app.wysiwyg.compose.EditorStyledText
+import io.element.android.wysiwyg.compose.EditorStyledText
 import kotlinx.coroutines.delay
 import me.saket.telephoto.zoomable.OverzoomEffect
 import me.saket.telephoto.zoomable.ZoomSpec

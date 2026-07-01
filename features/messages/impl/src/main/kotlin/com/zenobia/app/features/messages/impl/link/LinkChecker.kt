@@ -12,7 +12,7 @@ import dev.zacsweers.metro.AppScope
 import dev.zacsweers.metro.ContributesBinding
 import com.zenobia.app.libraries.core.data.tryOrNull
 import com.zenobia.app.libraries.core.extensions.containsRtLOverride
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import java.net.URI
 
 interface LinkChecker {

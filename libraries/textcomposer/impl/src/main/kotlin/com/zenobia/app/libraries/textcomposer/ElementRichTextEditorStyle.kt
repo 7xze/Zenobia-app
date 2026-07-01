@@ -16,8 +16,8 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import com.zenobia.app.compound.theme.ZenobiaTheme
 import com.zenobia.app.libraries.designsystem.theme.bgSubtleTertiary
-import com.zenobia.app.wysiwyg.compose.RichTextEditorDefaults
-import com.zenobia.app.wysiwyg.compose.RichTextEditorStyle
+import io.element.android.wysiwyg.compose.RichTextEditorDefaults
+import io.element.android.wysiwyg.compose.RichTextEditorStyle
 
 object ElementRichTextEditorStyle {
     @Composable

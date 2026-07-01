@@ -33,7 +33,7 @@ import com.zenobia.app.features.messages.impl.timeline.model.event.TimelineItemV
 import com.zenobia.app.features.messages.impl.timeline.model.event.ensureActiveLiveLocation
 import com.zenobia.app.libraries.architecture.Presenter
 import com.zenobia.app.libraries.voiceplayer.api.VoiceMessageState
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 
 @Composable
 fun TimelineItemEventContentView(

@@ -9,8 +9,8 @@
 package com.zenobia.app.features.messages.impl.messagecomposer
 
 import androidx.compose.runtime.Composable
-import com.zenobia.app.wysiwyg.compose.RichTextEditorState
-import com.zenobia.app.wysiwyg.compose.rememberRichTextEditorState
+import io.element.android.wysiwyg.compose.RichTextEditorState
+import io.element.android.wysiwyg.compose.rememberRichTextEditorState
 
 class TestRichTextEditorStateFactory : RichTextEditorStateFactory {
     @Composable

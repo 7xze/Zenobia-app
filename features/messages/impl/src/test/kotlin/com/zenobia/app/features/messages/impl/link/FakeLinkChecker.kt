@@ -9,7 +9,7 @@
 package com.zenobia.app.features.messages.impl.link
 
 import com.zenobia.app.tests.testutils.lambda.lambdaError
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 
 class FakeLinkChecker(
     private val isSafeResult: (Link) -> Boolean = { lambdaError() }

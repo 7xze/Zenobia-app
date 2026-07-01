@@ -48,7 +48,7 @@ import com.zenobia.app.libraries.matrix.api.timeline.Timeline
 import com.zenobia.app.libraries.matrix.api.user.MatrixUser
 import com.zenobia.app.libraries.ui.strings.CommonStrings
 import com.zenobia.app.libraries.ui.utils.a11y.isTalkbackActive
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import kotlin.time.DurationUnit
 
 @Composable

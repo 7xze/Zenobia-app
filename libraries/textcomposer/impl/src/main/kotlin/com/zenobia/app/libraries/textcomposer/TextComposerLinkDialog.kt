@@ -24,7 +24,7 @@ import com.zenobia.app.libraries.designsystem.preview.PreviewsDayNight
 import com.zenobia.app.libraries.designsystem.theme.components.ListItem
 import com.zenobia.app.libraries.designsystem.theme.components.Text
 import com.zenobia.app.libraries.ui.strings.CommonStrings
-import com.zenobia.app.wysiwyg.view.models.LinkAction
+import io.element.android.wysiwyg.view.models.LinkAction
 
 @Composable
 fun TextComposerLinkDialog(

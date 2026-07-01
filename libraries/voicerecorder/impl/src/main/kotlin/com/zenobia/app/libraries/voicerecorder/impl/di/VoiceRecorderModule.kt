@@ -18,7 +18,7 @@ import com.zenobia.app.libraries.di.RoomScope
 import com.zenobia.app.libraries.voicerecorder.impl.audio.AudioConfig
 import com.zenobia.app.libraries.voicerecorder.impl.audio.SampleRate
 import com.zenobia.app.libraries.voicerecorder.impl.file.VoiceFileConfig
-import com.zenobia.app.opusencoder.OggOpusEncoder
+import io.element.android.opusencoder.OggOpusEncoder
 
 @BindingContainer
 @ContributesTo(RoomScope::class)

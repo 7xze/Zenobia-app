@@ -10,7 +10,7 @@ package com.zenobia.app.libraries.textcomposer.model
 
 import androidx.compose.runtime.Immutable
 import com.zenobia.app.libraries.matrix.api.permalink.PermalinkBuilder
-import com.zenobia.app.wysiwyg.compose.RichTextEditorState
+import io.element.android.wysiwyg.compose.RichTextEditorState
 
 @Immutable
 sealed interface TextEditorState {

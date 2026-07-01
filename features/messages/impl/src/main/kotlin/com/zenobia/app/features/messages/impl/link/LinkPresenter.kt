@@ -15,7 +15,7 @@ import androidx.compose.runtime.remember
 import dev.zacsweers.metro.Inject
 import com.zenobia.app.libraries.architecture.AsyncAction
 import com.zenobia.app.libraries.architecture.Presenter
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 
 @Inject
 class LinkPresenter(

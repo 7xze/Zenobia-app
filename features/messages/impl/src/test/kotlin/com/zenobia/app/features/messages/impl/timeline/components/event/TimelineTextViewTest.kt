@@ -39,7 +39,7 @@ import com.zenobia.app.libraries.textcomposer.mentions.getMentionSpans
 import com.zenobia.app.tests.testutils.lambda.assert
 import com.zenobia.app.tests.testutils.lambda.lambdaRecorder
 import com.zenobia.app.tests.testutils.robolectric.RobolectricTest
-import com.zenobia.app.wysiwyg.view.spans.CustomMentionSpan
+import io.element.android.wysiwyg.view.spans.CustomMentionSpan
 import kotlinx.coroutines.CompletableDeferred
 import org.junit.Test
 

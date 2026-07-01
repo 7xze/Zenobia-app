@@ -78,7 +78,7 @@ import com.zenobia.app.libraries.testtags.TestTags
 import com.zenobia.app.libraries.testtags.testTag
 import com.zenobia.app.libraries.ui.strings.CommonStrings
 import com.zenobia.app.libraries.ui.utils.a11y.isTalkbackActive
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.combine

@@ -14,7 +14,7 @@ import com.zenobia.app.tests.testutils.WarmUpRule
 import com.zenobia.app.tests.testutils.lambda.lambdaRecorder
 import com.zenobia.app.tests.testutils.lambda.value
 import com.zenobia.app.tests.testutils.test
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import kotlinx.coroutines.test.runTest
 import org.junit.Rule
 import org.junit.Test

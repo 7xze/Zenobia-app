@@ -33,7 +33,7 @@ import com.zenobia.app.tests.testutils.ensureCalledOnceWithParam
 import com.zenobia.app.tests.testutils.pressBack
 import com.zenobia.app.tests.testutils.robolectric.RobolectricTest
 import com.zenobia.app.tests.testutils.setSafeContent
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 import org.junit.Test
 
 class PinnedMessagesListViewTest : RobolectricTest() {

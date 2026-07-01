@@ -53,7 +53,7 @@ import com.zenobia.app.libraries.matrix.api.user.MatrixUser
 import com.zenobia.app.libraries.ui.strings.CommonStrings
 import com.zenobia.app.services.analytics.compose.LocalAnalyticsService
 import com.zenobia.app.services.analyticsproviders.api.trackers.captureInteraction
-import com.zenobia.app.wysiwyg.link.Link
+import io.element.android.wysiwyg.link.Link
 
 @Composable
 fun PinnedMessagesListView(

@@ -28,9 +28,9 @@ import com.zenobia.app.libraries.designsystem.preview.PreviewsDayNight
 import com.zenobia.app.libraries.textcomposer.R
 import com.zenobia.app.libraries.textcomposer.TextComposerLinkDialog
 import com.zenobia.app.libraries.textcomposer.model.aRichTextEditorState
-import com.zenobia.app.wysiwyg.compose.RichTextEditorState
-import com.zenobia.app.wysiwyg.view.models.InlineFormat
-import com.zenobia.app.wysiwyg.view.models.LinkAction
+import io.element.android.wysiwyg.compose.RichTextEditorState
+import io.element.android.wysiwyg.view.models.InlineFormat
+import io.element.android.wysiwyg.view.models.LinkAction
 import kotlinx.coroutines.launch
 import uniffi.wysiwyg_composer.ActionState
 import uniffi.wysiwyg_composer.ComposerAction
