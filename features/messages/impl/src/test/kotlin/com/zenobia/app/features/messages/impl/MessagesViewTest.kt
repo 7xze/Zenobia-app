@@ -29,8 +29,8 @@ import androidx.compose.ui.test.performTouchInput
 import androidx.compose.ui.test.swipeRight
 import androidx.compose.ui.test.v2.runAndroidComposeUiTest
 import androidx.compose.ui.text.AnnotatedString
-import com.zenobia.app.emojibasebindings.Emoji
-import com.zenobia.app.emojibasebindings.EmojibaseCategory
+import io.element.android.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.EmojibaseCategory
 import io.element.android.emojibasebindings.EmojibaseStore
 import com.zenobia.app.features.messages.impl.actionlist.ActionListEvent
 import com.zenobia.app.features.messages.impl.actionlist.ActionListState

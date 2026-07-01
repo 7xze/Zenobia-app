@@ -17,7 +17,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalInspectionMode
 import com.zenobia.app.compound.tokens.generated.CompoundIcons
-import com.zenobia.app.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.Emoji
 import io.element.android.emojibasebindings.EmojibaseStore
 import com.zenobia.app.features.messages.impl.R
 import com.zenobia.app.features.messages.impl.timeline.components.customreaction.icon

@@ -30,7 +30,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
-import com.zenobia.app.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.Emoji
 import com.zenobia.app.features.messages.impl.timeline.components.customreaction.EmojiItem
 import com.zenobia.app.libraries.designsystem.preview.ZenobiaPreview
 import com.zenobia.app.libraries.designsystem.preview.PreviewsDayNight

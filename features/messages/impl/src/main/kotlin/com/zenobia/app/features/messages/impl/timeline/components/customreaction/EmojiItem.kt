@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.zenobia.app.compound.theme.ZenobiaTheme
-import com.zenobia.app.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.Emoji
 import com.zenobia.app.features.messages.impl.timeline.a11y.a11yReactionAction
 import com.zenobia.app.libraries.designsystem.preview.ZenobiaPreview
 import com.zenobia.app.libraries.designsystem.preview.PreviewsDayNight

@@ -9,9 +9,9 @@
 package com.zenobia.app.libraries.recentemojis.impl
 
 import com.google.common.truth.Truth.assertThat
-import com.zenobia.app.emojibasebindings.Emoji
-import com.zenobia.app.emojibasebindings.EmojibaseCategory
-import com.zenobia.app.emojibasebindings.EmojibaseCategory.People
+import io.element.android.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.EmojibaseCategory
+import io.element.android.emojibasebindings.EmojibaseCategory.People
 import com.zenobia.app.libraries.matrix.test.FakeMatrixClient
 import com.zenobia.app.libraries.recentemojis.test.FakeEmojibaseProvider
 import com.zenobia.app.tests.testutils.testCoroutineDispatchers

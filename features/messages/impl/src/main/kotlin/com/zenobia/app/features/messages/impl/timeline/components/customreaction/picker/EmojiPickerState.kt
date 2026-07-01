@@ -11,7 +11,7 @@ package com.zenobia.app.features.messages.impl.timeline.components.customreactio
 import androidx.annotation.StringRes
 import androidx.compose.foundation.text.input.TextFieldState
 import androidx.compose.runtime.Immutable
-import com.zenobia.app.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.Emoji
 import com.zenobia.app.libraries.designsystem.theme.components.IconSource
 import com.zenobia.app.libraries.designsystem.theme.components.SearchBarResultState
 import kotlinx.collections.immutable.ImmutableList

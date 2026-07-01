@@ -9,7 +9,7 @@
 package com.zenobia.app.libraries.recentemojis.impl
 
 import android.content.Context
-import com.zenobia.app.emojibasebindings.EmojibaseDatasource
+import io.element.android.emojibasebindings.EmojibaseDatasource
 import io.element.android.emojibasebindings.EmojibaseStore
 import com.zenobia.app.libraries.recentemojis.api.EmojibaseProvider
 

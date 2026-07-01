@@ -10,8 +10,8 @@ package com.zenobia.app.features.messages.impl.timeline.components.customreactio
 
 import androidx.compose.foundation.text.input.TextFieldState
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
-import com.zenobia.app.emojibasebindings.Emoji
-import com.zenobia.app.emojibasebindings.EmojibaseCategory
+import io.element.android.emojibasebindings.Emoji
+import io.element.android.emojibasebindings.EmojibaseCategory
 import com.zenobia.app.features.messages.impl.R
 import com.zenobia.app.features.messages.impl.timeline.components.customreaction.icon
 import com.zenobia.app.features.messages.impl.timeline.components.customreaction.title

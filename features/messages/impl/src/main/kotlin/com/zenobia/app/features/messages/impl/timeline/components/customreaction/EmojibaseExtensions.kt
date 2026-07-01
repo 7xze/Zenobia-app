@@ -19,7 +19,7 @@ import androidx.compose.material.icons.outlined.EmojiPeople
 import androidx.compose.material.icons.outlined.EmojiSymbols
 import androidx.compose.material.icons.outlined.EmojiTransportation
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.zenobia.app.emojibasebindings.EmojibaseCategory
+import io.element.android.emojibasebindings.EmojibaseCategory
 import com.zenobia.app.features.messages.impl.R
 
 @get:StringRes
