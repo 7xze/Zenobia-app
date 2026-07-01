@@ -95,10 +95,13 @@ jobs:
       - name: Show Gradle error context
         if: failure()
         run: |
-          echo "=== Last 50 lines of gradle output ==="
-          tail -50 /tmp/gradle.log 2>/dev/null || true
-          echo "=== Lines containing ERROR or FAILED ==="
-          grep -i "error\|failed\|FAILURE\|BUILD FAILED" /tmp/gradle.log 2>/dev/null | tail -20 || echo "No error markers found"
+          echo "::group::Last 50 lines of gradle output"
+          tail -50 /tmp/gradle.log 2>/dev/null || echo "No gradle.log found"
+          echo "::endgroup::"
+          echo "::group::Lines containing ERROR or FAILED"
+          grep -i "error\|failed\|FAILURE\|BUILD FAILED" /tmp/gradle.log 2>/dev/null | tail -20 | while IFS= read -r line; do echo "::error::$line"; done
+          if [ $? -ne 0 ] && [ ! -s /tmp/gradle.log ]; then echo "::warning::No error markers found in gradle.log"; fi
+          echo "::endgroup::"
 
       - name: List output files
         if: success()
