@@ -11,7 +11,7 @@ package com.zenobia.app.libraries.sessionstorage.impl
 import com.zenobia.app.libraries.sessionstorage.api.LoginType
 import com.zenobia.app.libraries.sessionstorage.api.SessionData
 import java.util.Date
-import com.zenobia.app.libraries.matrix.session.SessionData as DbSessionData
+import com.zenobia.app.libraries.sessionstorage.impl.SessionData as DbSessionData
 
 internal fun SessionData.toDbModel(): DbSessionData {
     return DbSessionData(
